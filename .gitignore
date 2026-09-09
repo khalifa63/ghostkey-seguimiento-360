@@ -1,0 +1,6 @@
+*.hex *.elf *.bin *.map
+.vscode/ .idea/ *.swp *.swo *~
+.DS_Store Thumbs.db
+.env *.key *.pem
+build/ dist/ node_modules/ *.log
+tmp/ temp/
