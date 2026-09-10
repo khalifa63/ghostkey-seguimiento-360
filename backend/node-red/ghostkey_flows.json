@@ -1,0 +1,2603 @@
+[
+    {
+        "id": "8c043f72d737492c",
+        "type": "tab",
+        "label": "GhostKey - Vincular Dispositivo",
+        "disabled": false,
+        "info": "",
+        "env": [
+            {
+                "name": "TRACCAR_ADMIN_USER",
+                "value": "antonio.califa@gmail.com",
+                "type": "str"
+            },
+            {
+                "name": "TRACCAR_ADMIN_PASS",
+                "value": "Khalifa63",
+                "type": "str"
+            }
+        ]
+    },
+    {
+        "id": "b658feb088695c03",
+        "type": "tab",
+        "label": "GhostKey - Generar Códigos (Admin)",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3bc0395f80a1a2f5",
+        "type": "tab",
+        "label": "GhostKey - Login",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "gk_pcmd_tab",
+        "type": "tab",
+        "label": "GhostKey - Comandos Pendientes (HTTP)",
+        "disabled": false,
+        "info": "Reemplaza el transporte MQTT (descartado por limitacion de Cloudflare Tunnel gratuito con TCP crudo). El dispositivo hace polling HTTP en cada check-in (sesion de movimiento o heartbeat) en vez de conectar a un broker MQTT.",
+        "env": []
+    },
+    {
+        "id": "c8b89e5d168bf22e",
+        "type": "tab",
+        "label": "GhostKey - Configuración Dispositivo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5338b4e582e3e57d",
+        "type": "tab",
+        "label": "GhostKey - Deshabilitar Usuario",
+        "disabled": false,
+        "info": "",
+        "env": [
+            {
+                "name": "TRACCAR_ADMIN_USER",
+                "value": "antonio.califa@gmail.com",
+                "type": "str"
+            },
+            {
+                "name": "TRACCAR_ADMIN_PASS",
+                "value": "TRACCAR_ADMIN_PASS",
+                "type": "env"
+            }
+        ]
+    },
+    {
+        "id": "1980faea1a7e4744",
+        "type": "tab",
+        "label": "GhostKey - Eliminar Dispositivo",
+        "disabled": false,
+        "info": "",
+        "env": [
+            {
+                "name": "TRACCAR_ADMIN_USER",
+                "value": "antonio.califa@gmail.com",
+                "type": "str"
+            },
+            {
+                "name": "TRACCAR_ADMIN_PASS",
+                "value": "TRACCAR_ADMIN_PASS",
+                "type": "env"
+            }
+        ]
+    },
+    {
+        "id": "d3d0867a841daabe",
+        "type": "tab",
+        "label": "GhostKey - Actualizar Usuario",
+        "disabled": false,
+        "info": "",
+        "env": [
+            {
+                "name": "TRACCAR_ADMIN_USER",
+                "value": "antonio.califa@gmail.com",
+                "type": "str"
+            },
+            {
+                "name": "TRACCAR_ADMIN_PASS",
+                "value": "TRACCAR_ADMIN_PASS",
+                "type": "env"
+            }
+        ]
+    },
+    {
+        "id": "9e59da03df221adb",
+        "type": "tab",
+        "label": "GhostKey - Mis Dispositivos",
+        "disabled": false,
+        "info": "",
+        "env": [
+            {
+                "name": "TRACCAR_ADMIN_USER",
+                "value": "antonio.califa@gmail.com",
+                "type": "str"
+            },
+            {
+                "name": "TRACCAR_ADMIN_PASS",
+                "value": "TRACCAR_ADMIN_PASS",
+                "type": "env"
+            }
+        ]
+    },
+    {
+        "id": "ca79c27b5773b92d",
+        "type": "tab",
+        "label": "GhostKey - Renombrar Dispositivo",
+        "disabled": false,
+        "info": "",
+        "env": [
+            {
+                "name": "TRACCAR_ADMIN_USER",
+                "value": "antonio.califa@gmail.com",
+                "type": "str"
+            },
+            {
+                "name": "TRACCAR_ADMIN_PASS",
+                "value": "TRACCAR_ADMIN_PASS",
+                "type": "env"
+            }
+        ]
+    },
+    {
+        "id": "815ca22bf0078c6a",
+        "type": "tab",
+        "label": "GhostKey - Registro",
+        "disabled": false,
+        "info": "",
+        "env": [
+            {
+                "name": "TRACCAR_ADMIN_USER",
+                "value": "antonio.califa@gmail.com",
+                "type": "str"
+            },
+            {
+                "name": "TRACCAR_ADMIN_PASS",
+                "value": "TRACCAR_ADMIN_PASS",
+                "type": "env"
+            }
+        ]
+    },
+    {
+        "id": "0efa2308e723ea1a",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": 8086,
+        "protocol": "http",
+        "database": "database",
+        "name": "InfluxDB Local",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://influxdb:8086",
+        "timeout": 10,
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "de38b24e120d75c2",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "postgres",
+        "hostFieldType": "str",
+        "port": 5432,
+        "portFieldType": "num",
+        "database": "traccar",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": 10,
+        "maxFieldType": "num",
+        "idle": 1000,
+        "idleFieldType": "num",
+        "connectionTimeout": 10000,
+        "connectionTimeoutFieldType": "num",
+        "user": "admin",
+        "userFieldType": "str",
+        "password": "PG_PASSWORD",
+        "passwordFieldType": "env"
+    },
+    {
+        "id": "9025e1a785e50b40",
+        "type": "http in",
+        "z": "8c043f72d737492c",
+        "name": "POST /api/claim",
+        "url": "/api/claim",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "f35cdf2097be0a41"
+            ]
+        ]
+    },
+    {
+        "id": "f35cdf2097be0a41",
+        "type": "function",
+        "z": "8c043f72d737492c",
+        "name": "Validar entrada",
+        "func": "const { userId, imei, code, alias } = msg.payload;\n\nif (!userId || !imei || !code) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"Faltan datos (userId, imei, code)\" };\n    return [null, msg];\n}\nif (!/^\\d{15}$/.test(imei)) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"IMEI inválido\" };\n    return [null, msg];\n}\n\nmsg.claimData = { userId, imei, code, alias: alias || \"Mi dispositivo\" };\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "8a7b6fb1122bbba7"
+            ],
+            [
+                "1a8ab0d66523e612"
+            ]
+        ]
+    },
+    {
+        "id": "8a7b6fb1122bbba7",
+        "type": "function",
+        "z": "8c043f72d737492c",
+        "name": "Preparar params búsqueda",
+        "func": "msg.params = [msg.claimData.imei, msg.claimData.code];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 300,
+        "wires": [
+            [
+                "1fdbd9b4b19f3087"
+            ]
+        ]
+    },
+    {
+        "id": "1fdbd9b4b19f3087",
+        "type": "postgresql",
+        "z": "8c043f72d737492c",
+        "name": "Buscar código",
+        "query": "SELECT * FROM ghostkey.claim_codes WHERE imei = $1 AND code = $2;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 300,
+        "wires": [
+            [
+                "8c123e21569f1b52"
+            ]
+        ]
+    },
+    {
+        "id": "8c123e21569f1b52",
+        "type": "function",
+        "z": "8c043f72d737492c",
+        "name": "Verificar disponible",
+        "func": "const rows = msg.payload;\n\nif (!rows || rows.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = { error: \"Código o IMEI inválido\" };\n    return [null, msg];\n}\n\nconst row = rows[0];\nif (row.status === \"claimed\") {\n    msg.statusCode = 409;\n    msg.payload = { error: \"Este dispositivo ya fue vinculado\" };\n    return [null, msg];\n}\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 300,
+        "wires": [
+            [
+                "79cf38231af861d8"
+            ],
+            [
+                "1a8ab0d66523e612"
+            ]
+        ]
+    },
+    {
+        "id": "79cf38231af861d8",
+        "type": "function",
+        "z": "8c043f72d737492c",
+        "name": "Armar GET verificar dispositivo",
+        "func": "const traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\n\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\n\nmsg.method = \"GET\";\nmsg.url = \"http://traccar:8082/api/devices?uniqueId=\" + msg.claimData.imei;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 300,
+        "wires": [
+            [
+                "4826327ca59b14c7"
+            ]
+        ]
+    },
+    {
+        "id": "4826327ca59b14c7",
+        "type": "http request",
+        "z": "8c043f72d737492c",
+        "name": "GET Traccar /api/devices",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 150,
+        "y": 380,
+        "wires": [
+            [
+                "a2edba625f943009"
+            ]
+        ]
+    },
+    {
+        "id": "a2edba625f943009",
+        "type": "function",
+        "z": "8c043f72d737492c",
+        "name": "Existe dispositivo?",
+        "func": "const arr = msg.payload;\n\nif (Array.isArray(arr) && arr.length > 0) {\n    // Ya existe -> usar su id, saltar creación\n    msg.deviceId = arr[0].id;\n    return [msg, null];\n} else {\n    // No existe -> hay que crearlo\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 380,
+        "wires": [
+            [
+                "5a041268d34f90fe"
+            ],
+            [
+                "ba44fd8f96e2ea51"
+            ]
+        ]
+    },
+    {
+        "id": "ba44fd8f96e2ea51",
+        "type": "function",
+        "z": "8c043f72d737492c",
+        "name": "Armar POST crear dispositivo",
+        "func": "msg.payload = {\n    name: msg.claimData.alias,\n    uniqueId: msg.claimData.imei\n};\n\nconst traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\n\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\n\nmsg.method = \"POST\";\nmsg.url = \"http://traccar:8082/api/devices\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 460,
+        "wires": [
+            [
+                "fec9a49254190aa7"
+            ]
+        ]
+    },
+    {
+        "id": "fec9a49254190aa7",
+        "type": "http request",
+        "z": "8c043f72d737492c",
+        "name": "POST Traccar /api/devices",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 900,
+        "y": 460,
+        "wires": [
+            [
+                "06fd73cb716efb38"
+            ]
+        ]
+    },
+    {
+        "id": "06fd73cb716efb38",
+        "type": "function",
+        "z": "8c043f72d737492c",
+        "name": "Verificar dispositivo creado",
+        "func": "if (msg.statusCode >= 200 && msg.statusCode < 300 && msg.payload && msg.payload.id) {\n    msg.deviceId = msg.payload.id;\n    return [msg, null];\n} else {\n    const detail = (msg.payload && msg.payload.message) ? msg.payload.message : \"Error HTTP \" + msg.statusCode;\n    msg.statusCode = msg.statusCode || 500;\n    msg.payload = { error: \"Error al crear dispositivo en Traccar\", details: detail };\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 460,
+        "wires": [
+            [
+                "5a041268d34f90fe"
+            ],
+            [
+                "1a8ab0d66523e612"
+            ]
+        ]
+    },
+    {
+        "id": "5a041268d34f90fe",
+        "type": "function",
+        "z": "8c043f72d737492c",
+        "name": "Armar payload permission",
+        "func": "msg.payload = {\n    userId: msg.claimData.userId,\n    deviceId: msg.deviceId\n};\n\nconst traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\n\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\n\nmsg.method = \"POST\";\nmsg.url = \"http://traccar:8082/api/permissions\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 300,
+        "wires": [
+            [
+                "bd9a4151ddfabe24"
+            ]
+        ]
+    },
+    {
+        "id": "bd9a4151ddfabe24",
+        "type": "http request",
+        "z": "8c043f72d737492c",
+        "name": "POST Traccar /api/permissions",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 900,
+        "y": 300,
+        "wires": [
+            [
+                "8ae980690bc023cb"
+            ]
+        ]
+    },
+    {
+        "id": "8ae980690bc023cb",
+        "type": "function",
+        "z": "8c043f72d737492c",
+        "name": "Verificar permiso y preparar UPDATE",
+        "func": "// Traccar responde 200 OK vacío si el permiso se creó,\n// o 400 si ya existía la asignación (lo tratamos como éxito también)\nif (msg.statusCode >= 200 && msg.statusCode < 300) {\n    msg.params = [msg.claimData.userId, msg.claimData.imei, msg.claimData.code];\n    return [msg, null];\n} else if (msg.statusCode === 400) {\n    // permiso ya existía, seguimos igual\n    msg.params = [msg.claimData.userId, msg.claimData.imei, msg.claimData.code];\n    return [msg, null];\n} else {\n    msg.statusCode = msg.statusCode || 500;\n    msg.payload = { error: \"Error al asignar dispositivo al usuario\" };\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 300,
+        "wires": [
+            [
+                "1d5dc4f9a560647b"
+            ],
+            [
+                "1a8ab0d66523e612"
+            ]
+        ]
+    },
+    {
+        "id": "1d5dc4f9a560647b",
+        "type": "postgresql",
+        "z": "8c043f72d737492c",
+        "name": "Marcar código claimed",
+        "query": "UPDATE ghostkey.claim_codes\nSET status = 'claimed', claimed_by = $1, claimed_at = NOW()\nWHERE imei = $2 AND code = $3\nRETURNING imei, status, claimed_by, claimed_at;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1420,
+        "y": 300,
+        "wires": [
+            [
+                "c2269353e952bced"
+            ]
+        ]
+    },
+    {
+        "id": "c2269353e952bced",
+        "type": "function",
+        "z": "8c043f72d737492c",
+        "name": "Respuesta exitosa",
+        "func": "const claimRow = Array.isArray(msg.payload) ? msg.payload[0] : msg.payload;\nconst deviceId = msg.deviceId;\nmsg.statusCode = 201;\nmsg.payload = {\n    success: true,\n    message: \"Dispositivo vinculado correctamente\",\n    deviceId: deviceId,\n    claim: claimRow\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 150,
+        "y": 540,
+        "wires": [
+            [
+                "0117dae382704306"
+            ]
+        ]
+    },
+    {
+        "id": "0117dae382704306",
+        "type": "http response",
+        "z": "8c043f72d737492c",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 390,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "1a8ab0d66523e612",
+        "type": "http response",
+        "z": "8c043f72d737492c",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 1420,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "0af424678aed21e8",
+        "type": "http in",
+        "z": "b658feb088695c03",
+        "name": "POST /api/admin/generate-codes",
+        "url": "/api/admin/generate-codes",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "98b090975e1513d9"
+            ]
+        ]
+    },
+    {
+        "id": "98b090975e1513d9",
+        "type": "function",
+        "z": "b658feb088695c03",
+        "name": "Generar códigos",
+        "func": "const imeis = msg.payload.imeis;\nif (!Array.isArray(imeis) || imeis.length === 0) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"Debes enviar un array 'imeis'\" };\n    return [null, msg];\n}\n\nfunction randomCode(len) {\n    const chars = \"ABCDEFGHJKLMNPQRSTUVWXYZ23456789\";\n    let s = \"\";\n    for (let i = 0; i < len; i++) s += chars[Math.floor(Math.random() * chars.length)];\n    return s;\n}\n\nconst codes = imeis.map(() => randomCode(6));\n\nmsg.params = [imeis, codes];\nmsg.generated = imeis.map((imei, i) => ({ imei, code: codes[i] }));\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 200,
+        "wires": [
+            [
+                "49014b0289095dbe"
+            ],
+            [
+                "9b39389917d87191"
+            ]
+        ]
+    },
+    {
+        "id": "49014b0289095dbe",
+        "type": "postgresql",
+        "z": "b658feb088695c03",
+        "name": "Insertar códigos (bulk)",
+        "query": "INSERT INTO ghostkey.claim_codes (imei, code)\nSELECT * FROM UNNEST($1::text[], $2::text[])\nON CONFLICT (imei) DO UPDATE SET code = EXCLUDED.code\nRETURNING imei, code;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 660,
+        "y": 200,
+        "wires": [
+            [
+                "fb5fb4b72f8cafb0"
+            ]
+        ]
+    },
+    {
+        "id": "fb5fb4b72f8cafb0",
+        "type": "function",
+        "z": "b658feb088695c03",
+        "name": "Respuesta exitosa",
+        "func": "msg.statusCode = 201;\nmsg.payload = {\n    success: true,\n    message: \"Códigos generados\",\n    codes: msg.payload\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 200,
+        "wires": [
+            [
+                "dfcdb1972c19e645"
+            ]
+        ]
+    },
+    {
+        "id": "dfcdb1972c19e645",
+        "type": "http response",
+        "z": "b658feb088695c03",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 1130,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9b39389917d87191",
+        "type": "http response",
+        "z": "b658feb088695c03",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 420,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "621ae87b3c9587ae",
+        "type": "http in",
+        "z": "3bc0395f80a1a2f5",
+        "name": "POST /api/login",
+        "url": "/api/login",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "f430953570bc8b94"
+            ]
+        ]
+    },
+    {
+        "id": "f430953570bc8b94",
+        "type": "function",
+        "z": "3bc0395f80a1a2f5",
+        "name": "Validar credenciales",
+        "func": "const { email, password } = msg.payload;\nif (!email || !password) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"Faltan email o password\" };\n    return [null, msg];\n}\nmsg.loginData = { email, password };\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "8f0a0cdb864cfeac"
+            ],
+            [
+                "4253a0bffc85f356"
+            ]
+        ]
+    },
+    {
+        "id": "8f0a0cdb864cfeac",
+        "type": "function",
+        "z": "3bc0395f80a1a2f5",
+        "name": "Armar POST /api/session",
+        "func": "const params = new URLSearchParams();\nparams.append(\"email\", msg.loginData.email);\nparams.append(\"password\", msg.loginData.password);\n\nmsg.payload = params.toString();\nmsg.headers = { \"Content-Type\": \"application/x-www-form-urlencoded\" };\nmsg.url = \"http://traccar:8082/api/session\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "5e9551c43971605f"
+            ]
+        ]
+    },
+    {
+        "id": "5e9551c43971605f",
+        "type": "http request",
+        "z": "3bc0395f80a1a2f5",
+        "name": "POST Traccar /api/session",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 890,
+        "y": 200,
+        "wires": [
+            [
+                "7ca82e9cef897cf6"
+            ]
+        ]
+    },
+    {
+        "id": "7ca82e9cef897cf6",
+        "type": "function",
+        "z": "3bc0395f80a1a2f5",
+        "name": "Verificar login",
+        "func": "if (msg.statusCode === 200 && msg.payload && msg.payload.id) {\n    msg.userObj = msg.payload;\n    msg.params = [msg.userObj.id];\n    return [msg, null];\n}\nmsg.statusCode = 401;\nmsg.payload = { error: \"Credenciales inválidas\" };\nreturn [null, msg];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 200,
+        "wires": [
+            [
+                "16c0aa4b85588e84"
+            ],
+            [
+                "4253a0bffc85f356"
+            ]
+        ]
+    },
+    {
+        "id": "16c0aa4b85588e84",
+        "type": "postgresql",
+        "z": "3bc0395f80a1a2f5",
+        "name": "Obtener perfil",
+        "query": "SELECT phone, city FROM ghostkey.customer_profile WHERE user_id = $1;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "62ac972933fa3c2e"
+            ]
+        ]
+    },
+    {
+        "id": "62ac972933fa3c2e",
+        "type": "function",
+        "z": "3bc0395f80a1a2f5",
+        "name": "Respuesta login",
+        "func": "const profile = Array.isArray(msg.payload) && msg.payload[0] ? msg.payload[0] : {};\nmsg.statusCode = 200;\nmsg.payload = {\n    success: true,\n    userId: msg.userObj.id,\n    name: msg.userObj.name,\n    email: msg.userObj.email,\n    phone: profile.phone || null,\n    city: profile.city || null\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "7e31beb98482af7e"
+            ]
+        ]
+    },
+    {
+        "id": "7e31beb98482af7e",
+        "type": "http response",
+        "z": "3bc0395f80a1a2f5",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4253a0bffc85f356",
+        "type": "http response",
+        "z": "3bc0395f80a1a2f5",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 1140,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "gk_pcmd_get_in",
+        "type": "http in",
+        "z": "gk_pcmd_tab",
+        "name": "GET /api/devices/imei/:imei/pending-cmd",
+        "url": "/api/devices/imei/:imei/pending-cmd",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 120,
+        "wires": [
+            [
+                "gk_pcmd_get_prep"
+            ]
+        ]
+    },
+    {
+        "id": "gk_pcmd_get_prep",
+        "type": "function",
+        "z": "gk_pcmd_tab",
+        "name": "Preparar SELECT por IMEI",
+        "func": "const imei = (msg.req.params.imei || '').trim();\nif (!/^[0-9]{15}$/.test(imei)) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"imei invalido\" };\n    return [null, msg];\n}\nmsg.params = [imei];\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 120,
+        "wires": [
+            [
+                "gk_pcmd_get_select"
+            ],
+            [
+                "gk_pcmd_get_err_resp"
+            ]
+        ]
+    },
+    {
+        "id": "gk_pcmd_get_select",
+        "type": "postgresql",
+        "z": "gk_pcmd_tab",
+        "name": "SELECT pending-cmd por IMEI",
+        "query": "SELECT dpc.device_id, dpc.cmd_json, dpc.created_at\nFROM ghostkey.device_pending_cmd dpc\nJOIN tc_devices d ON d.id = dpc.device_id\nWHERE d.uniqueid = $1 AND dpc.applied_at IS NULL;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 730,
+        "y": 100,
+        "wires": [
+            [
+                "gk_pcmd_get_resp_fn"
+            ]
+        ]
+    },
+    {
+        "id": "gk_pcmd_get_resp_fn",
+        "type": "function",
+        "z": "gk_pcmd_tab",
+        "name": "Respuesta (cmd o vacio)",
+        "func": "const rows = msg.payload;\nmsg.statusCode = 200;\nif (Array.isArray(rows) && rows[0]) {\n    let cmdObj;\n    try { cmdObj = JSON.parse(rows[0].cmd_json); }\n    catch (e) { cmdObj = null; }\n    msg.payload = cmdObj || {};\n} else {\n    msg.payload = {};\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 100,
+        "wires": [
+            [
+                "gk_pcmd_get_resp"
+            ]
+        ]
+    },
+    {
+        "id": "gk_pcmd_get_resp",
+        "type": "http response",
+        "z": "gk_pcmd_tab",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 1190,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "gk_pcmd_get_err_resp",
+        "type": "http response",
+        "z": "gk_pcmd_tab",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "gk_pcmd_ack_in",
+        "type": "http in",
+        "z": "gk_pcmd_tab",
+        "name": "POST /api/devices/imei/:imei/pending-cmd/ack",
+        "url": "/api/devices/imei/:imei/pending-cmd/ack",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "gk_pcmd_ack_prep"
+            ]
+        ]
+    },
+    {
+        "id": "gk_pcmd_ack_prep",
+        "type": "function",
+        "z": "gk_pcmd_tab",
+        "name": "Preparar UPDATE ack",
+        "func": "const imei = (msg.req.params.imei || '').trim();\nif (!/^[0-9]{15}$/.test(imei)) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"imei invalido\" };\n    return [null, msg];\n}\nmsg.params = [imei];\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 300,
+        "wires": [
+            [
+                "gk_pcmd_ack_update"
+            ],
+            [
+                "gk_pcmd_ack_err_resp"
+            ]
+        ]
+    },
+    {
+        "id": "gk_pcmd_ack_update",
+        "type": "postgresql",
+        "z": "gk_pcmd_tab",
+        "name": "UPDATE applied_at + synced",
+        "query": "WITH dev AS (\n    SELECT id FROM tc_devices WHERE uniqueid = $1\n),\nupd AS (\n    UPDATE ghostkey.device_pending_cmd\n    SET applied_at = NOW()\n    WHERE device_id = (SELECT id FROM dev) AND applied_at IS NULL\n    RETURNING device_id\n)\nUPDATE ghostkey.device_config\nSET synced = TRUE\nWHERE device_id = (SELECT device_id FROM upd)\nRETURNING device_id;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 730,
+        "y": 280,
+        "wires": [
+            [
+                "gk_pcmd_ack_resp_fn"
+            ]
+        ]
+    },
+    {
+        "id": "gk_pcmd_ack_resp_fn",
+        "type": "function",
+        "z": "gk_pcmd_tab",
+        "name": "Respuesta ack",
+        "func": "const rows = msg.payload;\nmsg.statusCode = 200;\nmsg.payload = { success: true, applied: Array.isArray(rows) && rows.length > 0 };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 280,
+        "wires": [
+            [
+                "gk_pcmd_ack_resp"
+            ]
+        ]
+    },
+    {
+        "id": "gk_pcmd_ack_resp",
+        "type": "http response",
+        "z": "gk_pcmd_tab",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 1190,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "gk_pcmd_ack_err_resp",
+        "type": "http response",
+        "z": "gk_pcmd_tab",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4a91f9845fa64b76",
+        "type": "http in",
+        "z": "c8b89e5d168bf22e",
+        "name": "GET /api/devices/:id/config",
+        "url": "/api/devices/:id/config",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "ef53b609f5932b3b"
+            ]
+        ]
+    },
+    {
+        "id": "ef53b609f5932b3b",
+        "type": "function",
+        "z": "c8b89e5d168bf22e",
+        "name": "Preparar SELECT",
+        "func": "msg.params = [msg.req.params.id];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 180,
+        "wires": [
+            [
+                "b72797c14f26a290"
+            ]
+        ]
+    },
+    {
+        "id": "b72797c14f26a290",
+        "type": "postgresql",
+        "z": "c8b89e5d168bf22e",
+        "name": "SELECT device_config",
+        "query": "SELECT * FROM ghostkey.device_config WHERE device_id = $1;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 660,
+        "y": 180,
+        "wires": [
+            [
+                "8c0ebeedc50a4c8c"
+            ]
+        ]
+    },
+    {
+        "id": "8c0ebeedc50a4c8c",
+        "type": "function",
+        "z": "c8b89e5d168bf22e",
+        "name": "Respuesta (con defaults)",
+        "func": "const rows = msg.payload;\nconst row = (Array.isArray(rows) && rows[0]) ? rows[0] : {\n    device_id: parseInt(msg.req.params.id),\n    mot_thr: 15,\n    mot_dur: 20,\n    report_interval_s: 30,\n    cooldown_s: 120,\n    heartbeat_h: 24,\n    batt_alarm_pct: 25,\n    ap_pass: null,\n    synced: false,\n    updated_at: null\n};\nmsg.statusCode = 200;\nmsg.payload = row;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 180,
+        "wires": [
+            [
+                "98c4734950baeada"
+            ]
+        ]
+    },
+    {
+        "id": "98c4734950baeada",
+        "type": "http response",
+        "z": "c8b89e5d168bf22e",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 1140,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "0f0c55a910eb2d3b",
+        "type": "http in",
+        "z": "c8b89e5d168bf22e",
+        "name": "PUT /api/devices/:id/config",
+        "url": "/api/devices/:id/config",
+        "method": "put",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "5f28d60b72754ed4"
+            ]
+        ]
+    },
+    {
+        "id": "5f28d60b72754ed4",
+        "type": "function",
+        "z": "c8b89e5d168bf22e",
+        "name": "Validar y preparar UPSERT",
+        "func": "const deviceId = parseInt(msg.req.params.id);\nlet { mot_thr, mot_dur, report_interval_s, cooldown_s, heartbeat_h, batt_alarm_pct, ap_pass } = msg.payload;\n\nmot_thr = parseInt(mot_thr);\nmot_dur = parseInt(mot_dur);\nreport_interval_s = parseInt(report_interval_s);\ncooldown_s = parseInt(cooldown_s);\nheartbeat_h = parseInt(heartbeat_h);\nbatt_alarm_pct = parseInt(batt_alarm_pct);\nap_pass = (ap_pass || '').trim();\n\nif (!deviceId || [mot_thr, mot_dur, report_interval_s, cooldown_s, heartbeat_h, batt_alarm_pct].some(v => isNaN(v))) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"Faltan o son inválidos: mot_thr, mot_dur, report_interval_s, cooldown_s, heartbeat_h, batt_alarm_pct\" };\n    return [null, msg];\n}\nif (mot_thr < 1 || mot_thr > 255 || mot_dur < 1 || mot_dur > 255) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"mot_thr y mot_dur deben estar entre 1 y 255\" };\n    return [null, msg];\n}\nif (report_interval_s < 5 || cooldown_s < 10) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"report_interval_s mínimo 5s, cooldown_s mínimo 10s\" };\n    return [null, msg];\n}\nif (heartbeat_h < 1) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"heartbeat_h mínimo 1 hora\" };\n    return [null, msg];\n}\nif (batt_alarm_pct < 0 || batt_alarm_pct > 100) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"batt_alarm_pct debe estar entre 0 y 100\" };\n    return [null, msg];\n}\nif (ap_pass && (ap_pass.length < 8 || ap_pass.length > 15)) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"ap_pass debe tener entre 8 y 15 caracteres\" };\n    return [null, msg];\n}\n\nmsg.params = [deviceId, mot_thr, mot_dur, report_interval_s, cooldown_s, heartbeat_h, batt_alarm_pct, ap_pass || null];\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 320,
+        "wires": [
+            [
+                "bbe89ac531394eeb"
+            ],
+            [
+                "a6aeb7e7d3261862"
+            ]
+        ]
+    },
+    {
+        "id": "bbe89ac531394eeb",
+        "type": "postgresql",
+        "z": "c8b89e5d168bf22e",
+        "name": "UPSERT device_config",
+        "query": "INSERT INTO ghostkey.device_config (device_id, mot_thr, mot_dur, report_interval_s, cooldown_s, heartbeat_h, batt_alarm_pct, ap_pass, synced, updated_at)\nVALUES ($1, $2, $3, $4, $5, $6, $7, $8, FALSE, NOW())\nON CONFLICT (device_id) DO UPDATE SET\n    mot_thr = EXCLUDED.mot_thr,\n    mot_dur = EXCLUDED.mot_dur,\n    report_interval_s = EXCLUDED.report_interval_s,\n    cooldown_s = EXCLUDED.cooldown_s,\n    heartbeat_h = EXCLUDED.heartbeat_h,\n    batt_alarm_pct = EXCLUDED.batt_alarm_pct,\n    ap_pass = COALESCE(EXCLUDED.ap_pass, ghostkey.device_config.ap_pass),\n    synced = FALSE,\n    updated_at = NOW()\nRETURNING *;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 690,
+        "y": 320,
+        "wires": [
+            [
+                "fbd53529a1580376",
+                "4975636984a06ccb"
+            ]
+        ]
+    },
+    {
+        "id": "fbd53529a1580376",
+        "type": "function",
+        "z": "c8b89e5d168bf22e",
+        "name": "Respuesta exitosa",
+        "func": "const row = Array.isArray(msg.payload) ? msg.payload[0] : msg.payload;\nmsg.statusCode = 200;\nmsg.payload = {\n    success: true,\n    message: \"Configuración guardada. Se aplicará al dispositivo en la próxima sincronización.\",\n    config: row\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 320,
+        "wires": [
+            [
+                "fc5323040ec5d957"
+            ]
+        ]
+    },
+    {
+        "id": "fc5323040ec5d957",
+        "type": "http response",
+        "z": "c8b89e5d168bf22e",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 1180,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a6aeb7e7d3261862",
+        "type": "http response",
+        "z": "c8b89e5d168bf22e",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 690,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4975636984a06ccb",
+        "type": "function",
+        "z": "c8b89e5d168bf22e",
+        "name": "Encolar comando pendiente",
+        "func": "const row = Array.isArray(msg.payload) ? msg.payload[0] : msg.payload;\nconst cmdJson = JSON.stringify({\n    cmd: \"batch\",\n    sets: {\n        mot_thr: row.mot_thr,\n        mot_dur: row.mot_dur,\n        report_interval_s: row.report_interval_s,\n        cooldown_s: row.cooldown_s,\n        heartbeat_h: row.heartbeat_h,\n        batt_alarm_pct: row.batt_alarm_pct,\n        ap_pass: row.ap_pass\n    }\n});\nmsg.params = [row.device_id, cmdJson];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 460,
+        "wires": [
+            [
+                "28af7aa470f49358"
+            ]
+        ]
+    },
+    {
+        "id": "28af7aa470f49358",
+        "type": "postgresql",
+        "z": "c8b89e5d168bf22e",
+        "name": "UPSERT device_pending_cmd",
+        "query": "INSERT INTO ghostkey.device_pending_cmd (device_id, cmd_json, created_at, applied_at)\nVALUES ($1, $2, NOW(), NULL)\nON CONFLICT (device_id) DO UPDATE SET\n    cmd_json = EXCLUDED.cmd_json,\n    created_at = NOW(),\n    applied_at = NULL;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1220,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c5ca28839cdbbfb",
+        "type": "http in",
+        "z": "5338b4e582e3e57d",
+        "name": "POST /api/user/:id/disable",
+        "url": "/api/user/:id/disable",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "37dc605264808719"
+            ]
+        ]
+    },
+    {
+        "id": "37dc605264808719",
+        "type": "function",
+        "z": "5338b4e582e3e57d",
+        "name": "Armar GET usuario",
+        "func": "msg.userId = msg.req.params.id;\nconst traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\nmsg.url = \"http://traccar:8082/api/users/\" + msg.userId;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 200,
+        "wires": [
+            [
+                "d16bf884d3ecbab4"
+            ]
+        ]
+    },
+    {
+        "id": "d16bf884d3ecbab4",
+        "type": "http request",
+        "z": "5338b4e582e3e57d",
+        "name": "GET Traccar /api/users/:id",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 660,
+        "y": 200,
+        "wires": [
+            [
+                "8bd76be3bd260c02"
+            ]
+        ]
+    },
+    {
+        "id": "8bd76be3bd260c02",
+        "type": "function",
+        "z": "5338b4e582e3e57d",
+        "name": "Marcar disabled=true y armar PUT",
+        "func": "if (msg.statusCode !== 200 || !msg.payload || !msg.payload.id) {\n    msg.statusCode = 404;\n    msg.payload = { error: \"Usuario no encontrado\" };\n    return [null, msg];\n}\n\nconst merged = Object.assign({}, msg.payload, { disabled: true });\n\nconst traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\nmsg.url = \"http://traccar:8082/api/users/\" + msg.userId;\nmsg.payload = merged;\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 200,
+        "wires": [
+            [
+                "fa0aab612e0ab182"
+            ],
+            [
+                "04cd8cf6e6a15c83"
+            ]
+        ]
+    },
+    {
+        "id": "fa0aab612e0ab182",
+        "type": "http request",
+        "z": "5338b4e582e3e57d",
+        "name": "PUT Traccar /api/users/:id",
+        "method": "PUT",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "fb49378e7661091e"
+            ]
+        ]
+    },
+    {
+        "id": "fb49378e7661091e",
+        "type": "function",
+        "z": "5338b4e582e3e57d",
+        "name": "Respuesta",
+        "func": "if (msg.statusCode < 200 || msg.statusCode >= 300) {\n    msg.statusCode = msg.statusCode || 500;\n    msg.payload = { error: \"Error al deshabilitar usuario\" };\n    return [null, msg];\n}\nmsg.statusCode = 200;\nmsg.payload = { success: true, message: \"Cuenta deshabilitada correctamente\" };\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "1977784a173ebad8"
+            ],
+            [
+                "04cd8cf6e6a15c83"
+            ]
+        ]
+    },
+    {
+        "id": "1977784a173ebad8",
+        "type": "http response",
+        "z": "5338b4e582e3e57d",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "04cd8cf6e6a15c83",
+        "type": "http response",
+        "z": "5338b4e582e3e57d",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 900,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "911d868f22746b6d",
+        "type": "http in",
+        "z": "5338b4e582e3e57d",
+        "name": "POST /api/user/:id/enable",
+        "url": "/api/user/:id/enable",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 400,
+        "wires": [
+            [
+                "d6c325f13402d2e7"
+            ]
+        ]
+    },
+    {
+        "id": "d6c325f13402d2e7",
+        "type": "function",
+        "z": "5338b4e582e3e57d",
+        "name": "Armar GET usuario",
+        "func": "msg.userId = msg.req.params.id;\nconst traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\nmsg.url = \"http://traccar:8082/api/users/\" + msg.userId;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "e74a04e6096d9ee3"
+            ]
+        ]
+    },
+    {
+        "id": "e74a04e6096d9ee3",
+        "type": "http request",
+        "z": "5338b4e582e3e57d",
+        "name": "GET Traccar /api/users/:id",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 660,
+        "y": 400,
+        "wires": [
+            [
+                "cbd729aa46edced6"
+            ]
+        ]
+    },
+    {
+        "id": "cbd729aa46edced6",
+        "type": "function",
+        "z": "5338b4e582e3e57d",
+        "name": "Marcar disabled=false y armar PUT",
+        "func": "if (msg.statusCode !== 200 || !msg.payload || !msg.payload.id) {\n    msg.statusCode = 404;\n    msg.payload = { error: \"Usuario no encontrado\" };\n    return [null, msg];\n}\n\nconst merged = Object.assign({}, msg.payload, { disabled: false });\n\nconst traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\nmsg.url = \"http://traccar:8082/api/users/\" + msg.userId;\nmsg.payload = merged;\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 400,
+        "wires": [
+            [
+                "12ddda62fbdcf948"
+            ],
+            [
+                "cf653f4e0e89af50"
+            ]
+        ]
+    },
+    {
+        "id": "12ddda62fbdcf948",
+        "type": "http request",
+        "z": "5338b4e582e3e57d",
+        "name": "PUT Traccar /api/users/:id",
+        "method": "PUT",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 150,
+        "y": 460,
+        "wires": [
+            [
+                "d436e9289393cc37"
+            ]
+        ]
+    },
+    {
+        "id": "d436e9289393cc37",
+        "type": "function",
+        "z": "5338b4e582e3e57d",
+        "name": "Respuesta",
+        "func": "if (msg.statusCode < 200 || msg.statusCode >= 300) {\n    msg.statusCode = msg.statusCode || 500;\n    msg.payload = { error: \"Error al habilitar usuario\" };\n    return [null, msg];\n}\nmsg.statusCode = 200;\nmsg.payload = { success: true, message: \"Cuenta habilitada correctamente\" };\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 460,
+        "wires": [
+            [
+                "6e32b1a79d40f28c"
+            ],
+            [
+                "cf653f4e0e89af50"
+            ]
+        ]
+    },
+    {
+        "id": "6e32b1a79d40f28c",
+        "type": "http response",
+        "z": "5338b4e582e3e57d",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cf653f4e0e89af50",
+        "type": "http response",
+        "z": "5338b4e582e3e57d",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 900,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "dbdf2c5b7049839c",
+        "type": "http in",
+        "z": "1980faea1a7e4744",
+        "name": "DELETE /api/devices/:id",
+        "url": "/api/devices/:id",
+        "method": "delete",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "7c34751a52b30d49"
+            ]
+        ]
+    },
+    {
+        "id": "7c34751a52b30d49",
+        "type": "function",
+        "z": "1980faea1a7e4744",
+        "name": "Validar entrada",
+        "func": "const deviceId = msg.req.params.id;\nconst userId = (msg.payload && msg.payload.userId) || msg.req.query.userId;\n\nif (!deviceId || !userId) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"Faltan deviceId o userId\" };\n    return [null, msg];\n}\n\nmsg.delData = { deviceId, userId };\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 200,
+        "wires": [
+            [
+                "8b145d783546edc8"
+            ],
+            [
+                "80bc172eaa708cb0"
+            ]
+        ]
+    },
+    {
+        "id": "8b145d783546edc8",
+        "type": "function",
+        "z": "1980faea1a7e4744",
+        "name": "Armar GET device (obtener IMEI)",
+        "func": "const traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\nmsg.url = \"http://traccar:8082/api/devices/\" + msg.delData.deviceId;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 200,
+        "wires": [
+            [
+                "fad4035bfd474cb6"
+            ]
+        ]
+    },
+    {
+        "id": "fad4035bfd474cb6",
+        "type": "http request",
+        "z": "1980faea1a7e4744",
+        "name": "GET Traccar /api/devices/:id",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 900,
+        "y": 200,
+        "wires": [
+            [
+                "6ee47222e4f1e11b"
+            ]
+        ]
+    },
+    {
+        "id": "6ee47222e4f1e11b",
+        "type": "function",
+        "z": "1980faea1a7e4744",
+        "name": "Armar DELETE permission",
+        "func": "if (msg.statusCode !== 200 || !msg.payload || !msg.payload.uniqueId) {\n    msg.statusCode = 404;\n    msg.payload = { error: \"Dispositivo no encontrado\" };\n    return [null, msg];\n}\n\nmsg.imei = msg.payload.uniqueId;\n\nconst traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\"),\n    \"Content-Type\": \"application/json\"\n};\nmsg.url = \"http://traccar:8082/api/permissions\";\nmsg.payload = {\n    userId: parseInt(msg.delData.userId),\n    deviceId: parseInt(msg.delData.deviceId)\n};\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "0aa796ef3358ef3f"
+            ],
+            [
+                "80bc172eaa708cb0"
+            ]
+        ]
+    },
+    {
+        "id": "0aa796ef3358ef3f",
+        "type": "http request",
+        "z": "1980faea1a7e4744",
+        "name": "DELETE Traccar /api/permissions",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "a4ca02b1b6767e42"
+            ]
+        ]
+    },
+    {
+        "id": "a4ca02b1b6767e42",
+        "type": "function",
+        "z": "1980faea1a7e4744",
+        "name": "Verificar y preparar reset código",
+        "func": "if (msg.statusCode < 200 || msg.statusCode >= 300) {\n    msg.statusCode = msg.statusCode || 500;\n    msg.payload = { error: \"Error al desvincular en Traccar\" };\n    return [null, msg];\n}\nmsg.params = [msg.imei];\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "aeddb0a3b8953f5e"
+            ],
+            [
+                "80bc172eaa708cb0"
+            ]
+        ]
+    },
+    {
+        "id": "aeddb0a3b8953f5e",
+        "type": "postgresql",
+        "z": "1980faea1a7e4744",
+        "name": "Reset claim_codes",
+        "query": "UPDATE ghostkey.claim_codes\nSET status = 'available', claimed_by = NULL, claimed_at = NULL\nWHERE imei = $1\nRETURNING imei, status;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 900,
+        "y": 280,
+        "wires": [
+            [
+                "50a17238b96668bc"
+            ]
+        ]
+    },
+    {
+        "id": "50a17238b96668bc",
+        "type": "function",
+        "z": "1980faea1a7e4744",
+        "name": "Respuesta exitosa",
+        "func": "msg.statusCode = 200;\nmsg.payload = {\n    success: true,\n    message: \"Dispositivo eliminado y código liberado\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 280,
+        "wires": [
+            [
+                "15f4efac0e1448b4"
+            ]
+        ]
+    },
+    {
+        "id": "15f4efac0e1448b4",
+        "type": "http response",
+        "z": "1980faea1a7e4744",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 1380,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "80bc172eaa708cb0",
+        "type": "http response",
+        "z": "1980faea1a7e4744",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 900,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "058f661e5546727c",
+        "type": "http in",
+        "z": "d3d0867a841daabe",
+        "name": "PUT /api/user/:id",
+        "url": "/api/user/:id",
+        "method": "put",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "731a17d4d678c1d0"
+            ]
+        ]
+    },
+    {
+        "id": "731a17d4d678c1d0",
+        "type": "function",
+        "z": "d3d0867a841daabe",
+        "name": "Validar entrada",
+        "func": "const id = msg.req.params.id;\nconst { name, phone, city, password, password2 } = msg.payload;\n\nif (password || password2) {\n    if (password !== password2) {\n        msg.statusCode = 400;\n        msg.payload = { error: \"Las contraseñas no coinciden\" };\n        return [null, msg];\n    }\n    if (password.length < 8) {\n        msg.statusCode = 400;\n        msg.payload = { error: \"Contraseña muy corta (mínimo 8)\" };\n        return [null, msg];\n    }\n}\n\nmsg.updateData = { id, name, phone, city, password };\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "83fb78e9eeddd072"
+            ],
+            [
+                "11a9e842fb6a1c7f"
+            ]
+        ]
+    },
+    {
+        "id": "83fb78e9eeddd072",
+        "type": "function",
+        "z": "d3d0867a841daabe",
+        "name": "Armar GET usuario actual",
+        "func": "const traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\nmsg.url = \"http://traccar:8082/api/users/\" + msg.updateData.id;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 200,
+        "wires": [
+            [
+                "c5cfd0f82535c842"
+            ]
+        ]
+    },
+    {
+        "id": "c5cfd0f82535c842",
+        "type": "http request",
+        "z": "d3d0867a841daabe",
+        "name": "GET Traccar /api/users/:id",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 850,
+        "y": 200,
+        "wires": [
+            [
+                "1d5321b3afae8328"
+            ]
+        ]
+    },
+    {
+        "id": "1d5321b3afae8328",
+        "type": "function",
+        "z": "d3d0867a841daabe",
+        "name": "Merge y armar PUT",
+        "func": "if (msg.statusCode !== 200 || !msg.payload || !msg.payload.id) {\n    msg.statusCode = 404;\n    msg.payload = { error: \"Usuario no encontrado en Traccar\" };\n    return [null, msg];\n}\n\nconst current = msg.payload;\nconst upd = msg.updateData;\n\nconst merged = Object.assign({}, current, {\n    name: upd.name || current.name\n});\nif (upd.password) merged.password = upd.password;\n\nconst traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\nmsg.url = \"http://traccar:8082/api/users/\" + upd.id;\nmsg.payload = merged;\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 200,
+        "wires": [
+            [
+                "eaa00f4fb3e61c27"
+            ],
+            [
+                "11a9e842fb6a1c7f"
+            ]
+        ]
+    },
+    {
+        "id": "eaa00f4fb3e61c27",
+        "type": "http request",
+        "z": "d3d0867a841daabe",
+        "name": "PUT Traccar /api/users/:id",
+        "method": "PUT",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "9e4eabc4fd0ab521"
+            ]
+        ]
+    },
+    {
+        "id": "9e4eabc4fd0ab521",
+        "type": "function",
+        "z": "d3d0867a841daabe",
+        "name": "Verificar PUT",
+        "func": "if (msg.statusCode < 200 || msg.statusCode >= 300) {\n    msg.statusCode = msg.statusCode || 500;\n    msg.payload = { error: \"Error al actualizar usuario en Traccar\" };\n    return [null, msg];\n}\nmsg.params = [msg.updateData.phone || null, msg.updateData.city || null, msg.updateData.id];\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "74dde11e193c5f1f"
+            ],
+            [
+                "11a9e842fb6a1c7f"
+            ]
+        ]
+    },
+    {
+        "id": "74dde11e193c5f1f",
+        "type": "postgresql",
+        "z": "d3d0867a841daabe",
+        "name": "Actualizar customer_profile",
+        "query": "UPDATE ghostkey.customer_profile\nSET phone = COALESCE($1, phone), city = COALESCE($2, city)\nWHERE user_id = $3\nRETURNING user_id, phone, city;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "d77bf34b8fd2050e"
+            ]
+        ]
+    },
+    {
+        "id": "d77bf34b8fd2050e",
+        "type": "function",
+        "z": "d3d0867a841daabe",
+        "name": "Respuesta exitosa",
+        "func": "msg.statusCode = 200;\nmsg.payload = {\n    success: true,\n    message: \"Usuario actualizado correctamente\",\n    profile: Array.isArray(msg.payload) ? msg.payload[0] : msg.payload\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 280,
+        "wires": [
+            [
+                "f25f83b40d4489ab"
+            ]
+        ]
+    },
+    {
+        "id": "f25f83b40d4489ab",
+        "type": "http response",
+        "z": "d3d0867a841daabe",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 1150,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "11a9e842fb6a1c7f",
+        "type": "http response",
+        "z": "d3d0867a841daabe",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 1360,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "04bd52377440dad7",
+        "type": "http in",
+        "z": "9e59da03df221adb",
+        "name": "GET /api/devices/mine",
+        "url": "/api/devices/mine",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "0b2b421d07632543"
+            ]
+        ]
+    },
+    {
+        "id": "0b2b421d07632543",
+        "type": "function",
+        "z": "9e59da03df221adb",
+        "name": "Extraer userId",
+        "func": "const userId = msg.req.query.userId;\nif (!userId) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"Falta userId\" };\n    return [null, msg];\n}\nmsg.userId = userId;\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 200,
+        "wires": [
+            [
+                "c495adf083e30b97"
+            ],
+            [
+                "45a8ad5d8df3580c"
+            ]
+        ]
+    },
+    {
+        "id": "c495adf083e30b97",
+        "type": "function",
+        "z": "9e59da03df221adb",
+        "name": "Armar GET devices",
+        "func": "const traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\nmsg.url = \"http://traccar:8082/api/devices?userId=\" + msg.userId;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "cfae940249e28c76"
+            ]
+        ]
+    },
+    {
+        "id": "cfae940249e28c76",
+        "type": "http request",
+        "z": "9e59da03df221adb",
+        "name": "GET Traccar /api/devices?userId=",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 900,
+        "y": 200,
+        "wires": [
+            [
+                "6d2d5fadabf54879"
+            ]
+        ]
+    },
+    {
+        "id": "6d2d5fadabf54879",
+        "type": "function",
+        "z": "9e59da03df221adb",
+        "name": "Responder",
+        "func": "msg.statusCode = msg.statusCode || 200;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 200,
+        "wires": [
+            [
+                "51aafa530bced7cd"
+            ]
+        ]
+    },
+    {
+        "id": "51aafa530bced7cd",
+        "type": "http response",
+        "z": "9e59da03df221adb",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 1380,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "45a8ad5d8df3580c",
+        "type": "http response",
+        "z": "9e59da03df221adb",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a9e9f273efec404f",
+        "type": "http in",
+        "z": "ca79c27b5773b92d",
+        "name": "PUT /api/devices/:id",
+        "url": "/api/devices/:id",
+        "method": "put",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "893a0527af5aed75"
+            ]
+        ]
+    },
+    {
+        "id": "893a0527af5aed75",
+        "type": "function",
+        "z": "ca79c27b5773b92d",
+        "name": "Validar entrada",
+        "func": "const id = msg.req.params.id;\nconst { name } = msg.payload;\n\nif (!name || !name.trim()) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"El nombre no puede estar vacío\" };\n    return [null, msg];\n}\n\nmsg.deviceId = id;\nmsg.newName = name.trim();\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "0c62b7c8a9977597"
+            ],
+            [
+                "a2c18ead24496b18"
+            ]
+        ]
+    },
+    {
+        "id": "0c62b7c8a9977597",
+        "type": "function",
+        "z": "ca79c27b5773b92d",
+        "name": "Armar GET device actual",
+        "func": "const traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\nmsg.url = \"http://traccar:8082/api/devices/\" + msg.deviceId;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "4e4fd69ef23abe49"
+            ]
+        ]
+    },
+    {
+        "id": "4e4fd69ef23abe49",
+        "type": "http request",
+        "z": "ca79c27b5773b92d",
+        "name": "GET Traccar /api/devices/:id",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 890,
+        "y": 200,
+        "wires": [
+            [
+                "d5db9247ede6b8cc"
+            ]
+        ]
+    },
+    {
+        "id": "d5db9247ede6b8cc",
+        "type": "function",
+        "z": "ca79c27b5773b92d",
+        "name": "Merge y armar PUT",
+        "func": "if (msg.statusCode !== 200 || !msg.payload || !msg.payload.id) {\n    msg.statusCode = 404;\n    msg.payload = { error: \"Dispositivo no encontrado\" };\n    return [null, msg];\n}\n\nconst merged = Object.assign({}, msg.payload, { name: msg.newName });\n\nconst traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\nmsg.headers = {\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\nmsg.url = \"http://traccar:8082/api/devices/\" + msg.deviceId;\nmsg.payload = merged;\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "02c841d734da0ce0"
+            ],
+            [
+                "a2c18ead24496b18"
+            ]
+        ]
+    },
+    {
+        "id": "02c841d734da0ce0",
+        "type": "http request",
+        "z": "ca79c27b5773b92d",
+        "name": "PUT Traccar /api/devices/:id",
+        "method": "PUT",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "ea8fd10a2638839f"
+            ]
+        ]
+    },
+    {
+        "id": "ea8fd10a2638839f",
+        "type": "function",
+        "z": "ca79c27b5773b92d",
+        "name": "Verificar y responder",
+        "func": "if (msg.statusCode < 200 || msg.statusCode >= 300) {\n    msg.statusCode = msg.statusCode || 500;\n    msg.payload = { error: \"Error al renombrar dispositivo en Traccar\" };\n    return [null, msg];\n}\nmsg.statusCode = 200;\nmsg.payload = {\n    success: true,\n    message: \"Dispositivo renombrado correctamente\",\n    device: msg.payload\n};\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "cc5927333e434c1a"
+            ],
+            [
+                "a2c18ead24496b18"
+            ]
+        ]
+    },
+    {
+        "id": "cc5927333e434c1a",
+        "type": "http response",
+        "z": "ca79c27b5773b92d",
+        "name": "HTTP Response OK",
+        "statusCode": "",
+        "headers": {},
+        "x": 900,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a2c18ead24496b18",
+        "type": "http response",
+        "z": "ca79c27b5773b92d",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 900,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2bef6c477c7df682",
+        "type": "http in",
+        "z": "815ca22bf0078c6a",
+        "name": "POST /api/register",
+        "url": "/api/register",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "70026ee56c486d6d"
+            ]
+        ]
+    },
+    {
+        "id": "70026ee56c486d6d",
+        "type": "function",
+        "z": "815ca22bf0078c6a",
+        "name": "Validar datos",
+        "func": "const { name, email, password, password2, phone, city } = msg.payload;\n\nif (!name || !email || !password || !password2) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"Faltan campos obligatorios\" };\n    return [null, msg];\n}\nif (password !== password2) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"Las contraseñas no coinciden\" };\n    return [null, msg];\n}\nif (password.length < 8) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"Contraseña muy corta (mínimo 8)\" };\n    return [null, msg];\n}\nconst emailOk = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);\nif (!emailOk) {\n    msg.statusCode = 400;\n    msg.payload = { error: \"Email inválido\" };\n    return [null, msg];\n}\n\nmsg.userData = { name, email, password, phone, city };\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 420,
+        "wires": [
+            [
+                "f778fd99342aa0c2"
+            ],
+            [
+                "f00435c0a08f6652"
+            ]
+        ]
+    },
+    {
+        "id": "f778fd99342aa0c2",
+        "type": "function",
+        "z": "815ca22bf0078c6a",
+        "name": "Armar payload Traccar",
+        "func": "// Construir payload para Traccar API\nconst { name, email, password, phone } = msg.userData;\n\nmsg.payload = {\n    name: name,\n    email: email,\n    password: password\n};\n\n// Headers con autenticación Basic Auth (admin de Traccar)\n// ⚠️ CAMBIA las credenciales por las de tu admin de Traccar\nconst traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\nconst traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\n\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n};\n\n// ⚠️ CAMBIA la URL por la de tu servidor Traccar\nmsg.url = \"http://traccar:8082/api/users\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 420,
+        "wires": [
+            [
+                "4819c3e9a30632db"
+            ]
+        ]
+    },
+    {
+        "id": "4819c3e9a30632db",
+        "type": "http request",
+        "z": "815ca22bf0078c6a",
+        "name": "POST Traccar /api/users",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 850,
+        "y": 420,
+        "wires": [
+            [
+                "5ee4d361043e8f9d"
+            ]
+        ]
+    },
+    {
+        "id": "5ee4d361043e8f9d",
+        "type": "function",
+        "z": "815ca22bf0078c6a",
+        "name": "Verificar respuesta Traccar",
+        "func": "if (msg.statusCode >= 200 && msg.statusCode < 300 && msg.payload && msg.payload.id) {\n    msg.userId = msg.payload.id;\n    node.status({ fill: \"green\", shape: \"dot\", text: \"Traccar OK - ID: \" + msg.userId });\n    return [msg, null];\n} else {\n    const raw = typeof msg.payload === \"string\" ? msg.payload : JSON.stringify(msg.payload);\n    let errorDetail = raw || (\"Error desconocido de Traccar (HTTP \" + msg.statusCode + \")\");\n    let publicError = \"Error al crear usuario en Traccar\";\n\n    if (/duplicate|unique|already exists|ya existe/i.test(raw || \"\")) {\n        publicError = \"Ese correo ya está registrado\";\n        msg.statusCode = 409;\n    } else {\n        msg.statusCode = msg.statusCode || 500;\n    }\n\n    msg.payload = { error: publicError };\n    node.status({ fill: \"red\", shape: \"ring\", text: \"Error Traccar\" });\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 420,
+        "wires": [
+            [
+                "5154f2fd1389c27b"
+            ],
+            [
+                "f00435c0a08f6652"
+            ]
+        ]
+    },
+    {
+        "id": "5154f2fd1389c27b",
+        "type": "function",
+        "z": "815ca22bf0078c6a",
+        "name": "Preparar INSERT PostgreSQL",
+        "func": "// Preparar parámetros para la consulta SQL\nmsg.params = [\n    msg.userId,                 // $1 -> user_id (de Traccar)\n    msg.userData.phone || null, // $2 -> phone\n    msg.userData.city  || null  // $3 -> city\n];\n\n// La query se puede poner aquí o en el nodo PostgreSQL\nmsg.topic = `INSERT INTO ghostkey.customer_profile (user_id, phone, city)\n             VALUES ($1, $2, $3)\n             RETURNING user_id, phone, city, created_at;`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 420,
+        "wires": [
+            [
+                "fb09c2666426ba86"
+            ]
+        ]
+    },
+    {
+        "id": "fb09c2666426ba86",
+        "type": "postgresql",
+        "z": "815ca22bf0078c6a",
+        "name": "INSERT customer_profile",
+        "query": "INSERT INTO ghostkey.customer_profile (user_id, phone, city)\nVALUES ($1, $2, $3)\nRETURNING user_id, phone, city, created_at;",
+        "postgreSQLConfig": "de38b24e120d75c2",
+        "split": false,
+        "rowsPerMsg": "",
+        "outputs": 1,
+        "x": 1650,
+        "y": 420,
+        "wires": [
+            [
+                "0e406f3810c59987"
+            ]
+        ]
+    },
+    {
+        "id": "0e406f3810c59987",
+        "type": "function",
+        "z": "815ca22bf0078c6a",
+        "name": "Respuesta exitosa",
+        "func": "msg.statusCode = 201;\nmsg.payload = {\n    success: true,\n    message: \"Usuario registrado correctamente\",\n    userId: msg.userId,\n    profile: msg.payload.rows ? msg.payload.rows[0] : msg.payload\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1890,
+        "y": 420,
+        "wires": [
+            [
+                "76c96ae44935638e"
+            ]
+        ]
+    },
+    {
+        "id": "76c96ae44935638e",
+        "type": "http response",
+        "z": "815ca22bf0078c6a",
+        "name": "HTTP Response (201)",
+        "statusCode": "",
+        "headers": {},
+        "x": 2130,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "f00435c0a08f6652",
+        "type": "http response",
+        "z": "815ca22bf0078c6a",
+        "name": "HTTP Response Error",
+        "statusCode": "",
+        "headers": {},
+        "x": 2350,
+        "y": 650,
+        "wires": []
+    },
+    {
+        "id": "48065363cbc670f7",
+        "type": "catch",
+        "z": "815ca22bf0078c6a",
+        "name": "Catch errores generales",
+        "scope": null,
+        "uncaught": false,
+        "x": 1110,
+        "y": 600,
+        "wires": [
+            [
+                "ghk_check_comp01"
+            ]
+        ]
+    },
+    {
+        "id": "4323c409a7d6d272",
+        "type": "function",
+        "z": "815ca22bf0078c6a",
+        "name": "Formatear error",
+        "func": "msg.statusCode = msg.statusCode || 500;\nif (!msg.payload || !msg.payload.error) {\n    msg.payload = {\n        error: \"Error interno del servidor\",\n        details: msg.error ? msg.error.message : \"Desconocido\"\n    };\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2100,
+        "y": 650,
+        "wires": [
+            [
+                "f00435c0a08f6652"
+            ]
+        ]
+    },
+    {
+        "id": "fb22018011637248",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-influxdb": "0.7.0",
+            "node-red-contrib-postgresql": "0.15.4"
+        }
+    },
+    {
+        "id": "ghk_check_comp01",
+        "type": "function",
+        "z": "815ca22bf0078c6a",
+        "name": "Verificar necesidad de compensación",
+        "func": "// Si msg.userId existe, el usuario ya se creo en Traccar antes de que\n// fallara el paso siguiente (INSERT customer_profile) -> hay que compensar.\nif (msg.userId) {\n    msg._originalError = { statusCode: msg.statusCode, payload: msg.payload };\n\n    const traccarUser = env.get(\"TRACCAR_ADMIN_USER\");\n    const traccarPass = env.get(\"TRACCAR_ADMIN_PASS\");\n    msg.headers = {\n        \"Authorization\": \"Basic \" + Buffer.from(traccarUser + \":\" + traccarPass).toString(\"base64\")\n    };\n    msg.url = \"http://traccar:8082/api/users/\" + msg.userId;\n\n    node.status({ fill: \"yellow\", shape: \"dot\", text: \"Compensando userId \" + msg.userId });\n    return [msg, null];\n} else {\n    // Error ocurrio antes de crear el usuario en Traccar (ej. validacion) -> nada que deshacer\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 700,
+        "wires": [
+            [
+                "ghk_delete_trc01"
+            ],
+            [
+                "4323c409a7d6d272"
+            ]
+        ]
+    },
+    {
+        "id": "ghk_delete_trc01",
+        "type": "http request",
+        "z": "815ca22bf0078c6a",
+        "name": "DELETE Traccar user (compensación)",
+        "method": "DELETE",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParserFlag": "",
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1610,
+        "y": 700,
+        "wires": [
+            [
+                "ghk_finalize_c01"
+            ]
+        ]
+    },
+    {
+        "id": "ghk_finalize_c01",
+        "type": "function",
+        "z": "815ca22bf0078c6a",
+        "name": "Finalizar compensación",
+        "func": "if (msg.statusCode >= 200 && msg.statusCode < 300) {\n    node.status({ fill: \"green\", shape: \"dot\", text: \"Compensacion OK - user \" + msg.userId + \" eliminado de Traccar\" });\n} else {\n    // Caso raro: ni el INSERT ni la compensacion funcionaron -> queda huerfano.\n    // Se deja constancia explicita en los logs de Node-RED para resolver a mano.\n    node.warn(\"COMPENSACION FALLIDA: usuario huerfano en Traccar, userId=\" + msg.userId +\n        \" (HTTP \" + msg.statusCode + \"). Revisar y eliminar manualmente si corresponde.\");\n    node.status({ fill: \"red\", shape: \"ring\", text: \"Compensacion fallo - userId \" + msg.userId });\n}\n\n// El cliente siempre recibe el error original del INSERT, sin importar\n// si la compensacion tuvo exito o no -> la compensacion es transparente.\nmsg.statusCode = msg._originalError.statusCode;\nmsg.payload = msg._originalError.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 700,
+        "wires": [
+            [
+                "4323c409a7d6d272"
+            ]
+        ]
+    }
+]
